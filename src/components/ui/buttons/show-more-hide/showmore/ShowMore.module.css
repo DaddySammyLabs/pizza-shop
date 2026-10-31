@@ -1,0 +1,24 @@
+/* src/components/pictures/carusel/ShowMore.module.css */
+
+.showMore {
+  margin-top: 12px;
+  padding: 10px 20px;
+
+  font-size: 18px;
+  background: #4824ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.showMore:hover {
+  background: #1b0297;
+}
+
+.showMore.desctop {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 15px 20px;
+}

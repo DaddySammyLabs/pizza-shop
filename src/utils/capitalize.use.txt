@@ -1,0 +1,37 @@
+
+// src/components/example.jsx
+
+
+import { capitalize } from "../../utils/capitalize";
+
+function WeatherCard({ texts }) {
+  const [city, setCity] = useState("");
+    ...
+
+  return (
+    <>
+      <h1>{texts.title}</h1>
+      <p>
+        {texts.weatherIn} {capitalize(city) || texts.inputPlaceholder}
+      </p>
+
+      <input
+        type="text"
+        placeholder={texts.inputPlaceholder}
+        value={city}
+        onChange={(e) => setCity(e.target.value)}
+        onKeyDown={handleKeyDown}
+      />
+      <button
+        className="btn"
+        type="button"
+        onClick={() => fetchWeatherAndReset(city)}
+      >
+        {texts.getWeatherBtn}
+      </button>
+      {textError && <p className="textError">{textError}</p>}
+    </>
+  );
+}
+
+export default WeatherCard;

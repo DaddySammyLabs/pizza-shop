@@ -1,0 +1,32 @@
+/* src/components/theme/Switcher.css */
+/* switcher-theme */
+.switch {
+  width: 70px;
+  height: 40px;
+  background: #444;
+  border-radius: 55px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.theme {
+  margin-left: 4px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #000;
+  filter: invert();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.theme.light {
+  content: url(../../assets/icons/icon-sun.svg);
+}
+
+.switch:hover > .theme.light {
+  transform: rotate(45deg);
+}

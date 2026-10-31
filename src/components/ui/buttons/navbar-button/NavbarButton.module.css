@@ -1,0 +1,18 @@
+.menu {
+  width: 2.6em;
+  height: 2.6em;
+}
+
+.menu img {
+  width: 100%;
+}
+
+.menu:hover {
+  filter: invert(0.6);
+}
+
+.modalMobile {
+  height: auto;
+  width: 120px;
+  background-color: aqua;
+}

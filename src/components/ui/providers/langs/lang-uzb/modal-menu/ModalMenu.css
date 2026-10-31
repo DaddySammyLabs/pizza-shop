@@ -1,0 +1,157 @@
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2000;
+}
+.menu-overlay.show {
+  opacity: 1;
+}
+
+/* сама панель */
+
+.menu-panel {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  width: 70px;
+  height: 110px;
+  background: #ffffff;
+
+  transform: translateX(100%);
+  animation: menuShow 0.3s forwards;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+.menu-panel.open {
+  transform: translateX(0);
+}
+
+/* close state (всё равно плавно уезжает) */
+.menu-panel.close {
+  transform: translateX(100%);
+}
+
+.menu-language {
+  /* display: flex;
+  justify-content: center; */
+  /* position: absolute; */
+  /* top: 10px; */
+  margin: auto;
+}
+
+/* появление справа */
+
+@keyframes menuShow {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* кнопка закрытия */
+
+/* .menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 35px;
+  height: 35px;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+} */
+
+/* .menu-close::before,
+.menu-close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 2px;
+  background: #333;
+} */
+
+/* .menu-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+} */
+
+/* список */
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list li {
+  margin-bottom: 5px;
+}
+
+.menu-overlay .menu-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.menu-list a:hover {
+  color: #4824ff;
+}
+
+/* .modal-content-mobile {
+  position: relative;
+  background: #fff;
+
+  padding: 40px;
+  border-radius: 16px;
+  width: 150px;
+  height: 200px;
+  transform: translateY(-250px);
+  transition: transform 0.5s ease;
+  z-index: 1001;
+}
+
+.modal-content-mobile .modal-close-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  outline: none;
+}
+
+.modal-content-mobile .modal-close-button::before,
+.modal-content-mobile .modal-close-button::after {
+  width: 15px;
+  height: 1.5px;
+}
+
+.modal-content-mobile .navbar-list-mobile a {
+  color: #333;
+  font-size: 13px;
+}
+
+.modal-content-mobile .navbar-list-mobile a:hover {
+  color: darkblue;
+  font-size: 13px;
+} */

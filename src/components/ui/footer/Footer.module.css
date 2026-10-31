@@ -1,0 +1,78 @@
+@import "@/components/ui/theme/theme-colors.css";
+
+/* footer */
+.line {
+  border: 0;
+  height: 0.8px;
+  background-color: #d2d2d2;
+}
+.footer {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px auto;
+  background: linear-gradient(
+    to right,
+    #4824ff,
+    #4824ff,
+    #85ebff,
+    #eeebff,
+    #85ebff,
+    #4824ff,
+    #4824ff
+  );
+  color: transparent;
+  background-clip: text;
+  background-size: 200%;
+  animation: gradientAnimation 5s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.upButton {
+  position: fixed;
+  right: 5vw;
+  bottom: 6vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.3s linear;
+  animation: appearance 2s forwards;
+  border: none;
+  opacity: 0;
+  transform: translateY(0px);
+  background: transparent;
+  z-index: 10;
+
+  /* width: 50px; */
+}
+
+/* .btn-up img {
+  width: 100%;
+} */
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* adaptive */
+
+@media (min-width: 768px) {
+  .footer {
+    margin: 30px auto;
+  }
+}

@@ -1,0 +1,73 @@
+/* language */
+@import "../theme/theme-colors.css";
+
+/* .language-switcher {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+} */
+
+.language-switcher button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 10px;
+}
+
+.language-switcher button:hover {
+  filter: invert(1);
+}
+.language-switcher button.active {
+  background-color: #ffc107;
+  color: #000;
+  border-color: #ffc107;
+}
+
+.language-switcher button {
+  border: 1px solid #4824ff;
+  color: #4824ff;
+}
+
+.language-switcher button.active {
+  background-color: #4824ff;
+  color: #fff;
+  border-color: #4824ff;
+}
+
+/* adaptive */
+@media (min-width: 320px) {
+}
+@media (min-width: 375px) {
+}
+@media (min-width: 412px) {
+}
+@media (min-width: 500px) {
+}
+@media (min-width: 768px) {
+  .language-switcher button {
+    font-size: 0.6em;
+  }
+}
+
+@media (min-width: 900px) {
+}
+
+@media (min-width: 1024px) {
+}
+@media (min-width: 1024px) {
+  .language-switcher button {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .language-switcher button {
+    font-size: 18px;
+  }
+}

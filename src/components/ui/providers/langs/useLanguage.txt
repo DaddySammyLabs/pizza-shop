@@ -1,0 +1,83 @@
+// toUse: 1-import, 2-cont, 3-comp, 4-pros
+
+// 1-import texts + useLanguage + LanguageSwitcher
+import texts from "./constants/texts";
+import useLanguage from "./hooks/useLanguage";
+import LanguageSwitcher from "./components/languages/LanguageSwitcher";
+
+// 2-set-variable via-default or without-def-value
+const [language, setLanguage] = useState("ru");
+const { language, setLanguage } = useLanguage();
+
+// 3-use-in-component & 4-pros
+<>
+  <LanguageSwitcher language={language} setLanguage={setLanguage} />
+  <Header texts={texts[language]} />
+</>; 
+
+/----/----/ for-example /----/----/
+
+import { useState } from "react";
+
+import "./styles/App.css";
+
+import texts from "./constants/texts";
+import useLanguage from "./hooks/useLanguage";
+
+import Header from "./components/Header";
+import LanguageSwitcher from "./components/languages/LanguageSwitcher";
+
+function App() {
+  // const [language, setLanguage] = useState("ru");
+  const { language, setLanguage } = useLanguage();
+
+  return (
+    <>
+      <div>
+        <LanguageSwitcher language={language} setLanguage={setLanguage} />
+        <h1 className="app-title">{texts[language].title}</h1>
+
+        <div className="container">
+          <Header texts={texts[language]} />
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default App;
+
+
+/----/----/ in-components /----/----/
+
+import useTheme from "../hooks/useTheme";
+import SwitcherTheme from "../components/theme/SwitcherTheme";
+
+import "../styles/Header.css";
+
+function Header({ texts }) {
+  const { theme, toggleTheme } = useTheme();
+
+  return (
+    <>
+      <header className="header">
+        <nav className="navbar">
+          <ul className="navbar-list">
+            <li>
+              <a href="">{texts.about}</a>
+            </li>
+            <li>
+              <a href="">{texts.service}</a>
+            </li>
+          </ul>
+        </nav>
+
+        <SwitcherTheme theme={theme} toggleTheme={toggleTheme} />
+      </header>
+    </>
+  );
+}
+
+export default Header;
+
+

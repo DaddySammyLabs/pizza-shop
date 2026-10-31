@@ -1,0 +1,114 @@
+/* src/components/theme/SwitcherTheme.css */
+@import "./theme-colors.css";
+
+.switch-theme {
+  width: 54px;
+  height: 33px;
+  background: var(--switch-background);
+  border-radius: 55px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.toggle {
+  width: 26px;
+  height: 26px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: 0.3s;
+  /* filter: invert(); */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.toggle.dark {
+  left: 25px;
+  /* color: #000; */
+}
+
+/* body.light {
+  background: #fff;
+
+  color: black;
+}
+
+body.dark {
+  background: #121212;
+  color: white;
+} */
+
+/* icon-image */
+/* body.light img {
+  filter: invert(1);
+}
+body.dark img {
+  filter: invert(0);
+} */
+/* contrast */
+/* body.light {
+  filter: invert(1);
+}
+body.dark {
+  filter: invert(0);
+} */
+
+/* Плавная анимация */
+.icon-toggle {
+  display: inline-block; /* обязательно для transform */
+  transition: transform 0.5s ease-in-out;
+}
+
+.switch-theme:hover .toggle.light .icon-toggle {
+  transform: rotate(50deg);
+}
+
+@media (min-width: 500px) {
+}
+@media (min-width: 768px) {
+}
+
+@media (min-width: 900px) {
+}
+
+@media (min-width: 1024px) {
+}
+@media (min-width: 1224px) {
+  .switch-theme {
+    width: 60px;
+    height: 32px;
+  }
+
+  .toggle {
+    width: 26px;
+    height: 26px;
+  }
+  .toggle.dark {
+    left: 31px;
+    /* color: #000; */
+  }
+}
+
+@media (min-width: 1440px) {
+  .language-switcher button {
+    font-size: 18px;
+  }
+
+  .switch-theme {
+    width: 70px;
+    height: 40px;
+  }
+
+  .toggle {
+    width: 34px;
+    height: 34px;
+  }
+}

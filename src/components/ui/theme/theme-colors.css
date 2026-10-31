@@ -1,0 +1,132 @@
+html[data-theme="light"] {
+  --main-background: #fff;
+  --header-background: #ffffffe1;
+  --service-background: #fbfaff;
+  /* --service-background: #f9f7fe; */
+  --since-title: #170196;
+  --since-numbers: #170196;
+  --since-text: #402cb1;
+  --time-card-bg: #ffffffcc; /* rgb(255 255 255 / 80%) */
+
+  --card-gradient: linear-gradient(
+    to right,
+    rgb(255 228 230 / 50%),
+    rgb(252 231 243 / 50%)
+  );
+  --card-border: rgb(255 228 230 / 50%);
+  --location-bg: transparent;
+  --location-bg: #fbfaff;
+  --location-title: #261a67;
+
+  --hero-background: #4050de;
+
+  --main-text-color: #000;
+  --text-color: #17132b;
+  --text-color2: #261a67;
+  --text-color3: #4b5563;
+  --text-color4: #1f2937;
+
+  --form-border: #ffe4e680;
+  --label-form: #6b7280;
+  --input-border: #ffe4e6;
+  --input-bg: #ffffff80;
+  --options-bg: #fff;
+  --options-text: #374151;
+  --option-hover: #fff1f2;
+  /* --submit-bg: #f43f5e; --submit-hover: #e11d48;*/
+  --submit-bg: #ff9c07;
+  --submit-hover: #e88c02;
+
+  --wishcard-border: rgb(244 63 94 / 30%);
+  --wishcard-border: #fbfaff;
+  --wishcard-bg: #ffffffcc;
+  --wish-autor-bg: linear-gradient(to right, #fb7185, #f472b6);
+  --wish-autor-bg: linear-gradient(to right, #4824ff, #180196a6);
+
+  --wishes-carusel-bg: #4824ff93;
+
+  --title-color: #4824ff;
+  /* --hero-text-color: #000; */
+
+  --switch-background: #eeebff;
+  --theme-background: #fff;
+
+  --title-border-color: #4824ff30;
+
+  --main-elements-color: #eeebff;
+  --elements-color: #cdc4fd;
+  --divs-color: #8874fa;
+  --elements-text-color: #fff;
+
+  --tag-text-color: #4824ff;
+  --selected-tag-background: #180196a6;
+}
+
+html[data-theme="dark"] {
+  --main-background: #04001a;
+  --header-background: #04001af1;
+  --service-background: #060026;
+
+  --since-title: #4824ff;
+  --since-numbers: #fff;
+  /* --since-text: #402cb1ad; */
+  --since-text: #c3c2c2ab;
+  --time-card-bg: #0b023e;
+  --time-card-bg: #0b023e;
+
+  --card-gradient: #120749;
+  /* --gradient: linear-gradient(
+    to right,
+    rgb(255 228 230 / 50%),
+    rgb(252 231 243 / 50%)
+  ); */
+  --card-border: #6e52fdb2;
+  --location-bg: #241474;
+  --location-title: #fff;
+
+  --hero-background: transparent;
+
+  --main-text-color: #fff;
+  --text-color: #fefefe;
+  --text-color2: #d8d4d4;
+  --text-color3: #c1c0c0;
+  --text-color4: #fefefe;
+
+  --form-border: transparent;
+  --label-form: #d8d4d4;
+  --input-border: #322373c2;
+  --input-bg: transparent;
+  --options-bg: #10034a;
+  --options-text: #e8e8e8;
+  --option-hover: #2c10a9;
+  --submit-bg: #3814d9;
+  --submit-hover: #2c10a9;
+
+  /* --wishcard-border: #ff9c07; */
+  --wishcard-border: #4824ff6a;
+  --wishcard-bg: #0a042ab8;
+  /* --wish-autor-bg: linear-gradient(to right, #4230a5, #61038d); */
+  --wish-autor-bg: linear-gradient(to right, #61038d, #180196a6);
+
+  --wishes-carusel-bg: #07002d;
+
+  /* --title-color: #030206; */
+  --title-color: #6f52fd;
+
+  /* --switch-background: #333; */
+  /* --switch-background: #120940; */
+  --switch-background: #2b2058;
+  --theme-background: #4824ff;
+
+  --title-border-color: #7073a779;
+
+  --main-elements-color: #4824ff;
+  --main-elements-color: #180196a6;
+  --elements-color: #4824ff6a;
+  --divs-color: #4831bd;
+  --elements-text-color: #000;
+
+  --tag-text-color: #fff;
+  /* --selected-tag-background: #04001a; */
+  --selected-tag-background: #120749;
+}
