@@ -6,7 +6,7 @@ A modern and elegant wedding invitation website built with React. The applicatio
 
 **Live Demo**: [Pizza Shop URL](https://web-invitation-seven.vercel.app/)
 
-Repository: [GitHub repository URL](https://github.com/DaddySammyLabs/web-invitation)
+Repository: [GitHub repository URL](https://github.com/DaddySammyLabs/pizza-shop)
 
 ## Основные возможности проекта
 
@@ -26,10 +26,7 @@ Repository: [GitHub repository URL](https://github.com/DaddySammyLabs/web-invita
 
 ## 📸 Preview
 
-![Business Card](src/assets/images/web_invitation_light.png)
-![Business Card](src/assets/images/web_invitation_dark.png)
-
-![Mobile Business Card](src/assets/images/web_invitation_mobile.png)
+![Pizza Shop](src/assets/imagespizza-shop.jpeg)
 
 ## 📱 Mobile App
 
@@ -409,7 +406,7 @@ The project can be extended with several features:
 
 Clone the repository:
 
-git clone https://github.com/your-username/react-sneaker-store.git
+git clone https://github.com/DaddySammyLabs/pizza-shop.git
 
 Navigate to the project:
 
