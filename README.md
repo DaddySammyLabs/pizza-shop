@@ -27,7 +27,7 @@ Repository: [GitHub repository URL](https://github.com/DaddySammyLabs/pizza-shop
 ## 📸 Preview
 
 ![Pizza Shop - Home](src/assets/images/pizzaHouse_home.png)
-![Pizza Shop - Orders](src/assets/images/orders.png)
+![Pizza Shop - Orders](src/assets/images/pizzaHouse_orders.png)
 
 ## 📱 Mobile App
 
