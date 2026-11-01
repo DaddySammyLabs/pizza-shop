@@ -10,6 +10,23 @@ Repository: [GitHub repository URL](https://github.com/DaddySammyLabs/pizza-shop
 
 ## Основные возможности проекта
 
+### Pizza Catalog — каталог пиццы.
+
+- Displaying pizzas with images, descriptions, and prices.
+- Filtering pizzas by categories.
+- Highlighting popular pizzas.
+- Loading and error states.
+
+### Shopping Cart — корзина покупок.
+
+- Adding pizzas to the cart.
+- Increasing and decreasing product quantities.
+- Removing individual products.
+- Calculating the total number of items.
+- Calculating the total price.
+- Clearing the shopping cart.
+- Synchronizing cart data with the server.
+
 ### 🌍 Multilingual support — поддержка нескольких языков.
 
 📸 Photo gallery — галерея свадебных фотографий.
