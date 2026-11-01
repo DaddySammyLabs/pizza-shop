@@ -1,0 +1,44 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.categoryButton,
+.active {
+  padding: 13px 24px;
+  border: none;
+  border-radius: 30px;
+
+  background: #f5f5f5;
+  color: #333333;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.categoryButton:hover {
+  background: #ffe5d2;
+  color: #ff6900;
+}
+
+.active {
+  background: #ff6900;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .categories {
+    gap: 8px;
+  }
+
+  .categoryButton,
+  .active {
+    padding: 11px 17px;
+    font-size: 13px;
+  }
+}

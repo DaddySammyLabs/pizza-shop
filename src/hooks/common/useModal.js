@@ -1,7 +1,7 @@
 // src/hooks/useModal.js
 
 import { useState, useCallback, useEffect } from "react";
-import { useEscapeKey } from "./common/useEscapeKey";
+import { useEscapeKey } from "./useEscapeKey";
 
 const useModal = (initialValue = false, closeOnEscape = false) => {
   const [isOpen, setIsOpen] = useState(initialValue);

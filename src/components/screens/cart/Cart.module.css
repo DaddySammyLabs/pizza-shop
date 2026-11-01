@@ -1,0 +1,143 @@
+.cart {
+  padding: 35px;
+  background: #fafafa;
+  border-radius: 20px;
+}
+
+.cart h2 {
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+.empty {
+  padding: 35px 10px;
+  text-align: center;
+}
+
+.empty span {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 50px;
+}
+
+.empty p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.empty small {
+  display: block;
+  margin-top: 8px;
+  color: #888;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.itemInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+}
+
+.itemInfo img {
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.itemInfo h3 {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.itemInfo span {
+  color: #888;
+  font-size: 14px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.quantity button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+
+  background: #ffe5d2;
+  color: #ff6900;
+
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.subtotal {
+  white-space: nowrap;
+}
+
+.total {
+  margin-top: 25px;
+}
+
+.total div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.total button {
+  width: 100%;
+  padding: 16px;
+
+  border: none;
+  border-radius: 30px;
+
+  background: #ff6900;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.total button:hover {
+  background: #e85e00;
+}
+
+@media (max-width: 600px) {
+  .cart {
+    padding: 20px 15px;
+  }
+
+  .item {
+    flex-wrap: wrap;
+  }
+
+  .itemInfo {
+    flex: 1 1 100%;
+  }
+
+  .subtotal {
+    margin-left: auto;
+  }
+}

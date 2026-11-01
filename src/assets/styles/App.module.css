@@ -1,0 +1,72 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 60px 25px;
+}
+
+.menu {
+  margin-bottom: 70px;
+}
+
+.heading h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.heading p {
+  color: #888888;
+  font-size: 15px;
+}
+
+.pizzaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.footer {
+  padding: 45px 20px;
+  text-align: center;
+  background: #222222;
+  color: white;
+}
+
+.footer h2 {
+  margin-bottom: 12px;
+}
+
+.footer p {
+  margin-bottom: 20px;
+}
+
+.footer span {
+  color: #aaaaaa;
+  font-size: 13px;
+}
+
+@media (max-width: 850px) {
+  .pizzaGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 40px 15px;
+  }
+
+  .pizzaGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading h2 {
+    font-size: 27px;
+  }
+}

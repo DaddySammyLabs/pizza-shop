@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 // useCarousel -> useAutoScrollCarousel
-import { useEscapeKey } from "../common/useEscapeKey";
+import { useEscapeKey } from "../../common/useEscapeKey";
 
 const useAutoScrollCarousel = ({ images, direction = "left" }) => {
   const caruselRef = useRef(null);

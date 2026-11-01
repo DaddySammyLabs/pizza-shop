@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+@import "../../components/ui/theme/theme-colors.css";
+
+/* font-family: "Poppins", sans-serif; */
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Prata", serif; */
+/* common styles  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* overflow-x: hidden; */
+  background: var(--main-background);
+  color: var(--main-text-color);
+}
+
+.container {
+  width: 94%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 500ms ease;
+  /* color: #765bff; */
+}
+
+/* form > input */
+/* input {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
+  padding: 10px 30px;
+  width: 250px;
+  border-radius: 20px;
+  border: none;
+  border-bottom: 2px solid #9a849f;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 2px solid #ffc107;
+} */
+
+.apps {
+  position: relative;
+}
+
+/* ::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4824ff81;
+  border-radius: 10px;
+  
+}
+*::-webkit-scrollbar-track {
+  background-color: #ffffff01;
+} */
+
+/* for firefox-browser */
+html {
+  scrollbar-color: #4824ff81 transparent;
+  scrollbar-width: thin;
+}
+
+@media (min-width: 320px) {
+}
+@media (min-width: 375px) {
+}
+@media (min-width: 412px) {
+}
+@media (min-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) {
+}
+
+@media (min-width: 900px) {
+}
+
+@media (min-width: 1024px) {
+}
+/* @media (min-width: 1200px) {
+  .container {
+    width: 84%;
+  }
+} */
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+/* Маленькие телефоны */
+/* "320px - 479px" */
+
+/* Большие телефоны */
+/* "480px - 767px" */
+
+/* Ноутбуки */
+/* "768px - 1023px" */
+
+/* Ноутбуки */
+/* 1024px - 1279px */
+
+/* Десктопы */
+/* "1280px+" */

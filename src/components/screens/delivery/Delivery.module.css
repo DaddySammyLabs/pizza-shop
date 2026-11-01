@@ -1,0 +1,161 @@
+.delivery {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  min-height: 60vh;
+}
+
+.heading {
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  color: #ff6900;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.heading h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.heading p {
+  color: #888;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  background: #fff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+}
+
+.empty > span {
+  font-size: 65px;
+}
+
+.empty h3 {
+  margin: 15px 0 5px;
+  font-size: 22px;
+}
+
+.empty p {
+  color: #888;
+}
+
+.orders {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.orderHeader h3 {
+  margin: 0 0 7px;
+}
+
+.orderHeader > div > span {
+  font-size: 13px;
+  color: #888;
+}
+
+.processing,
+.delivered {
+  padding: 9px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.processing {
+  background: #fff1dc;
+  color: #e58a00;
+}
+
+.delivered {
+  background: #e3f8e9;
+  color: #20964b;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.item img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.item h4 {
+  margin: 0 0 7px;
+}
+
+.item span {
+  color: #888;
+  font-size: 14px;
+}
+
+.orderFooter {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.orderFooter strong {
+  color: #ff6900;
+}
+
+@media (max-width: 600px) {
+  .delivery {
+    padding: 30px 15px;
+  }
+
+  .order {
+    padding: 17px;
+  }
+
+  .orderHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .heading h2 {
+    font-size: 26px;
+  }
+}
