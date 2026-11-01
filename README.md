@@ -8,16 +8,21 @@ A modern and elegant wedding invitation website built with React. The applicatio
 
 Repository: [GitHub repository URL](https://github.com/DaddySammyLabs/pizza-shop)
 
+## 📸 Preview
+
+![Pizza Shop - Home](src/assets/images/pizzaHouse_home.png)
+![Pizza Shop - Orders](src/assets/images/pizzaHouse_orders.png)
+
 ## Основные возможности проекта
 
-### Pizza Catalog — каталог пиццы.
+### 🍕 Pizza Catalog — каталог пиццы.
 
 - Displaying pizzas with images, descriptions, and prices.
 - Filtering pizzas by categories.
 - Highlighting popular pizzas.
 - Loading and error states.
 
-### Shopping Cart — корзина покупок.
+### 🛒 Shopping Cart — корзина покупок.
 
 - Adding pizzas to the cart.
 - Increasing and decreasing product quantities.
@@ -27,76 +32,41 @@ Repository: [GitHub repository URL](https://github.com/DaddySammyLabs/pizza-shop
 - Clearing the shopping cart.
 - Synchronizing cart data with the server.
 
-### 🌍 Multilingual support — поддержка нескольких языков.
+### 📦 Order Management — управление заказами.
 
-📸 Photo gallery — галерея свадебных фотографий.
+- Creating new orders.
+- Saving orders on the server.
+- Managing order information.
+- Viewing order history.
+- Preventing duplicate order processing.
 
-🧭 Navigation section — навигация по разделам сайта.
+### 🚚 Delivery System — система доставки.
 
-🎬 Video section — блок с видеоконтентом.
+- Displaying active delivery orders.
+- Automatic delivery status checking.
+- Simulated delivery time.
+- Automatically transferring completed orders to order history.
+- Updating delivery information.
 
-💌 Wedding wishes — форма для отправки пожеланий молодожёнам.
+### ✨ Features
 
-✅ RSVP form — подтверждение или отказ от участия в свадьбе.
-
-🖥️ Server integration — отправка информации о гостях, ответов RSVP и пожеланий на сервер.
-
-## 📸 Preview
-
-![Pizza Shop - Home](src/assets/images/pizzaHouse_home.png)
-![Pizza Shop - Orders](src/assets/images/pizzaHouse_orders.png)
-
-## 📱 Mobile App
-
-The project also includes a dedicated mobile version of the sneaker store.
-
-The mobile app adapts the main shopping experience for mobile devices and provides users with convenient access to the catalog, favorites, shopping cart, orders, and other core features.
-
-The mobile version was created to practice building a consistent user experience across different platforms while keeping the application architecture and business logic reusable.
-
-## Mobile App Features
-
-📱 Mobile-optimized interface
-
-🛍️ Product catalog
-
-🔍 Product search
-
-↕️ Product sorting
-
-❤️ Favorites
-
-🛒 Shopping cart
-
-📦 Orders
-
-🌙 Light and dark themes
-
-🌐 Multilingual interface
-
-✨ Smooth UI interactions
-
-📐 Adaptive layouts for different screen sizes
-
-The mobile version focuses on maintaining the same core shopping flow as the web application while adapting navigation, layouts, and interactions to smaller screens.
-
-## ✨ Features
-
-🛒 Add and remove products from the shopping cart
-❤️ Add and remove products from favorites
-📦 Create and manage orders
-🔍 Search products by name
-↕️ Sort products by name and price
-🌙 Switch between light and dark themes
-🌐 Multilingual interface
-📱 Responsive layout for different screen sizes
-⏳ Loading skeletons while products are loading
-✨ Smooth list animations
-🪟 Cart drawer and modal windows
-⬆️ Smooth scrolling
-🧩 Reusable React components
-
----
+- 🍕 Browse the pizza catalog.
+- 🔎 Filter pizzas by category.
+- 🔥 Highlight popular pizzas.
+- 🛒 Add and remove products from the shopping cart.
+- ➕ Increase product quantity.
+- ➖ Decrease product quantity.
+- 🧹 Clear the shopping cart.
+- 💰 Calculate the total cart price.
+- 📦 Create and manage orders.
+- 🚚 Track active deliveries.
+- 🔄 Automatically process completed deliveries.
+- 📋 View order history.
+- 🌙 Switch between light and dark themes.
+- 🌐 Multilingual interface.
+- ⏳ Loading and error states.
+- 📱 Responsive layout for different screen sizes.
+- 🧩 Reusable React components.
 
 ## 🛠️ Tech Stack
 
@@ -109,19 +79,28 @@ The mobile version focuses on maintaining the same core shopping flow as the web
 
 ### 🎨 Styling
 
-- **Tailwind CSS**
 - **CSS Modules**
 - **Global CSS**
 
 ### 🧠 State & Logic
 
-- **React Hooks**
-- **Context API**
-- **Custom Hooks**
+**React Hooks**
+**Context API**
+**Custom Hooks**
+**useState**
+**useEffect**
+**useCallback**
+**useRef**
 
-### 📦 Libraries
+### 🌐 API & Data Fetching
 
-- **@formkit/auto-animate**
+**Axios**
+**REST API**
+**AbortController**
+
+### 📦 Backend
+
+**Mokky.dev — backend service for storing and managing application data.**
 
 ---
 
@@ -138,22 +117,23 @@ User Interaction
     React Components
         │
         ▼
-    Custom Hooks
+     AppContext
         │
-        ├── useCart
-        ├── useFavorites
-        ├── useOrders
-        ├── useFilters
+        ▼
+    useAppState
+        │
+        ├── useLanguage
         ├── useTheme
-        ├── useModal
-        ├── useToggle
-        └── useResize
+        ├── useCategories
+        ├── useCart
+        └── useOrders
         │
         ▼
-Application State
+    Axios API Layer
         │
         ▼
-        API
+      Mokky.dev
+
 ```
 
 ## Application State
@@ -166,259 +146,70 @@ For example:
 
 ```
 useAppState
-├── useCart
-├── useFavorites
-├── useOrders
-├── useFilters
+├── useLanguage
 ├── useTheme
-├── useModal
-├── useResize
-└── useLanguage
-```
-
-This makes individual features easier to maintain and reuse.
-
-## 🪝 Custom Hooks
-
-One of the main goals of the project was to practice creating reusable custom hooks.
-
-### useCart
-
-Responsible for shopping cart functionality:
-
-Adding products
-Removing products
-Managing cart items
-Opening and closing the cart drawer
-
-### useFavorites
-
-Handles the user's favorite products.
-
-### useOrders
-
-Responsible for order-related logic:
-
-Creating orders
-Managing order state
-Completing orders
-Removing orders
-
-### useFilters
-
-Handles catalog filtering:
-Product search
-Sorting by name
-Sorting by price
-
-### useTheme
-
-Controls the application theme and allows users to switch between light and dark modes.
-
-### useModal
-
-Provides reusable modal state management.
-
-### useToggle
-
-A small reusable hook for boolean state values.
-
-### useResize
-
-Tracks the viewport size and allows the application to adjust its behavior for mobile devices.
-
-## 🌐 Multilingual Support
-
-The application supports multiple languages.
-
-Text content is stored separately in:
-
-src/constants/texts.js
-
-Language-related functionality is located in the providers directory.
-
-This approach keeps text content separated from UI components and makes adding additional languages easier.
-
-## 🧭 Routing
-
-The application uses React Router for client-side navigation.
-
-Main routes include:
+├── useCategories
+├── useCart
+└── useOrders
 
 ```
-/ → Home / Product Catalog
-/favorites → Favorite Products
-/orders → User Orders
-```
-
-Navigation between pages happens without a full browser reload.
-
-## 🛒 Shopping Experience
-
-The application provides a complete basic shopping flow:
-
-```
-Browse Products
-↓
-Search / Sort
-↓
-Add to Cart
-↓
-Review Cart
-↓
-Create Order
-↓
-View Orders
-```
-
-Users can also save products to favorites and return to them later.
-
-### 🔎 Search & Sorting
-
-The product catalog supports dynamic search and sorting.
-
-Available sorting options:
-
-By name
-Lowest price
-Highest price
-
-Search is performed based on the product title.
-
-Filtering and sorting logic is isolated in the useFilters hook rather than being implemented directly inside the product components.
-
-### ❤️ Favorites
-
-Users can save products to a favorites list.
-
-The favorites page reuses the same product card component as the main catalog, demonstrating component reusability across different pages.
-
-### 📦 Orders
-
-After adding products to the cart, users can create an order and access their order history.
-
-The order-related logic is separated into useOrders and service.orders.js.
-
-This structure makes the application easier to extend with a real backend in the future.
-
-### ⏳ Loading States
-
-Product loading is represented with skeleton components instead of leaving the page empty.
-
-This improves the perceived loading experience and provides visual feedback while data is being retrieved.
-
-### ✨ Animations
-
-The project uses @formkit/auto-animate to create smooth transitions when the product list changes.
-
-For example, animations are applied when products are filtered or sorted.
-
-### 📱 Responsive Design
-
-The interface is designed to work across different screen sizes.
-
-The application uses:
-
-Responsive Tailwind CSS utilities
-CSS Modules
-A custom useResize hook
-Adaptive component behavior
-
-The goal was to keep the main shopping experience usable on both desktop and mobile devices.
 
 ## 📁 Project Structure
 
 ```
 src/
 ├── api/
-│ ├── service.items.js
-│ └── service.orders.js
+│   └── ...
 │
 ├── assets/
-│ ├── icons/
-│ ├── images/
-│ └── styles/
-│ └── global.css
+│   └── styles/
+│       └── App.module.css
 │
-├── constants/
-│ └── texts.js
+├── components/
+│   ├── screens/
+│   │   ├── header/
+│   │   └── hero/
+│   │
+│   └── ui/
+│       ├── categories/
+│       └── pizza-card/
 │
 ├── context/
-│ └── ...
+│   └── AppContext.jsx
 │
 ├── hooks/
-│ ├── useCart.js
-│ ├── useFavorites.js
-│ ├── useModal.js
-│ ├── useTheme.js
-│ ├── useToggle.js
-│ └── ...
+│   ├── api/
+│   │   ├── useCart.js
+│   │   └── useFetch.js
+│   │
+│   ├── providers/
+│   │   ├── useLanguage.js
+│   │   └── useTheme.js
+│   │
+│   ├── useAppState.js
+│   ├── useCategories.js
+│   └── useOrders.js
 │
-├── providers/
-│ ├── LanguageSwitcher.css
-│ ├── LanguageSwitcher.jsx
-│ └── useLanguage.js
+├── pages/
+│   ├── home/
+│   │   └── Home.jsx
+│   │
+│   ├── cart/
+│   │   └── CartPage.jsx
+│   │
+│   ├── delivery/
+│   │   └── DeliveryPage.jsx
+│   │
+│   └── orders/
+│       └── OrdersPage.jsx
 │
 ├── App.jsx
-├── App.module.css
-├── main.jsx
-└── useAppState.js
+└── main.jsx
 
 public/
-├── icons/
-└── images/
-└── sneakers/
+└── ...
+
 ```
-
-## 🔌 API Layer
-
-API-related functionality is separated from the UI.
-
-src/api/
-├── service.items.js
-└── service.orders.js
-
-service.items.js is responsible for retrieving product data, while service.orders.js contains order-related operations.
-
-Keeping API logic separate makes it easier to replace mock/local data with a real backend API later.
-
-## 🎯 What I Practiced
-
-This project helped me practice several important frontend concepts:
-
-Building reusable React components
-Creating and composing custom hooks
-Managing complex application state
-Using React Context
-Working with React Router
-Separating business logic from UI
-Handling asynchronous data
-Implementing search and sorting
-Creating reusable modal and toggle logic
-Working with responsive layouts
-Managing light/dark themes
-Implementing multilingual UI
-Creating loading states
-Adding UI animations
-Structuring a React project for scalability
-
-### 🔮 Future Improvements
-
-The project can be extended with several features:
-
-🔐 User authentication
-💾 Persistent cart and favorites
-🗄️ Real backend and database
-📄 Individual product pages
-🛍️ Checkout page
-💳 Payment integration
-📍 Order delivery information
-🧪 Unit and integration tests
-🟦 TypeScript migration
-♿ Improved accessibility
-📄 Pagination or infinite scrolling
-🔔 Toast notifications
-🧾 More detailed order history
 
 ### 💻 Installation
 
